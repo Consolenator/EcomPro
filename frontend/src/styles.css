@@ -7,6 +7,13 @@ body {
     color: #333;
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
 .container {
     width:90%;
     max-width:1200px; /* Limits the content width on large screens */
@@ -72,16 +79,7 @@ body {
 }
 
 /* PRODUCT GRID STYLING (The layout power of CSS) */
-.product-grid {
-    display: grid;
-    /* This creates a responsive layout: 
-       auto-fit: create as many columns as will fit
-       minmax: ensure each column is at least 250px wide
-    */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
+
 
 /* PRODUCT CARD STYLING */
 .product-card {
